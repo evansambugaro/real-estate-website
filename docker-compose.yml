@@ -3,7 +3,9 @@ services:
   apache:
     image: 'samevam/realestate:latest'
     container_name: HW2
+    environment:
+      - 'PORT:3000'
     ports:
-    - '80:80'
+      - '80:80'
     volumes:
-    - ./website:/usr/local/apache2/htdocs
+      - ./website:/usr/local/apache2/htdocs
