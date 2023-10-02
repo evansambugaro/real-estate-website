@@ -1,7 +1,7 @@
 version: '2.4'
 services:
   apache:
-    image: httpd:latest
+    image: 'samevam/realestate:latest'
     container_name: HW2
     ports:
     - '80:80'
